@@ -11,6 +11,7 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
   - [Kfold CV Logistic Regression](#kfold-cv-logistic-regression)
   - [Decision Tree Model](#decision-tree-model)
   - [Random Forest Model](#random-forest-model)
+  - [K Nearest Neighbors Model](#k-nearest-neighbors-model)
     
   
 ## Exploratory Data Analysis
@@ -92,3 +93,39 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
 * **SUMMARY**
   * Baseline Model Accuracy :  82.12%
   * Optimal Parameter Model Accuracy : 81.56%
+
+
+## K Nearest Neighbors Model
+
+**Notebook :** KNNModel.ipynb
+
+**Key Steps:**
+* Impute missing values. Split input data into training and test sets.
+
+* Train bsaeline model with default parameters and establish benchmark scores.  
+
+* Tune KNN model by changing n_neighbors. Select optimal value.
+
+* Implement model with optimal values and compare its performance with that of baseline model.
+
+* **SUMMARY**
+  * KNN Baseline Model Accuracy :  79.32%
+  * KNN Model with Manhattan distance metric and n_neighbors = 17 Accuracy  : 82.12%
+  
+  
+## SVM Model
+
+**Notebook :** SVMModel.ipynb
+
+**Key Steps:**
+* Impute missing values. Split input data into training and test sets.
+
+* Train bsaeline model with default parameters and establish benchmark scores.  
+
+* Implement Hyper Parameter tuning by using GridSearchCV and StratifiedKFold approach
+
+* Implement model with optimal values and compare its performance with that of baseline model.
+
+* **SUMMARY**
+  * Baseline Model Accuracy :  83.24%
+  * Optimal Parameter Model Accuracy  : 83.24%
