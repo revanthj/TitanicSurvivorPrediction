@@ -12,6 +12,7 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
   - [Decision Tree Model](#decision-tree-model)
   - [Random Forest Model](#random-forest-model)
   - [K Nearest Neighbors Model](#k-nearest-neighbors-model)
+  - [Support Vector Model](#support-vector-model)
     
   
 ## Exploratory Data Analysis
@@ -113,7 +114,7 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
   * KNN Model with Manhattan distance metric and n_neighbors = 17 Accuracy  : 82.12%
   
   
-## SVM Model
+## Support Vector Model
 
 **Notebook :** SVMModel.ipynb
 
