@@ -8,6 +8,9 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
 
   - [Exploratory Data Analysis](#exploratory-data-analysis)
   - [Logistic Regression](#logistic-regression)
+  - [Kfold CV Logistic Regression](#kfold-cv-logistic-regression)
+  - [Decision Tree Model](#decision-tree-model)
+  - [Random Forest Model](#random-forest-model)
     
   
 ## Exploratory Data Analysis
@@ -35,3 +38,57 @@ In this challenge, it is asked to complete the analysis of what sorts of people 
 
 * **SUMMARY**
   * Accuracy :  80.39%
+  
+  
+## Kfold CV Logistic Regression
+
+**Notebook :** KfoldCVLogisticRegression.ipynb
+
+**Key Steps:**
+* Impute missing values. Split input data into training and test sets.
+
+* Find optimal value of regularization parameter (C) by training baseline linear model with different values and estimating accuracy of predictions
+
+* Implement Logistic Regression with Stratified fold (Stratification is the process of rearranging the data as to ensure each fold is a good representative of the whole) CV approach and optimal value of regularization parameter. Compare model performance with that of basline.
+
+* **SUMMARY**
+  * Baseline Model Accuracy :  80.39%
+  * Stratified Fold CV Model Accuracy : 83.24%
+  
+  
+## Decision Tree Model
+
+**Notebook :** DecisionTreeModel.ipynb
+
+**Key Steps:**
+* Impute missing values. Split input data into training and test sets.
+
+* Train bsaeline model with default parameters and establish benchmark scores.  
+
+* Implement Hyper Parameter tuning using RandomizedSearchCV and find optimal values.
+
+* Implement model with optimal values and compare its performance with that of baseline model.
+
+* Visualize Decision Tree using **StringIO and export_graphviz**
+
+* **SUMMARY**
+  * Baseline Model Accuracy :  81.00%
+  * Optimal Parameter Model Accuracy : 82.12%
+  
+  
+## Random Forest Model
+
+**Notebook :** RandomForestModel.ipynb
+
+**Key Steps:**
+* Impute missing values. Split input data into training and test sets.
+
+* Train bsaeline model with default parameters and establish benchmark scores.  
+
+* Implement Hyper Parameter tuning using RandomizedSearchCV and find optimal values.
+
+* Implement model with optimal values and compare its performance with that of baseline model.
+
+* **SUMMARY**
+  * Baseline Model Accuracy :  82.12%
+  * Optimal Parameter Model Accuracy : 81.56%
